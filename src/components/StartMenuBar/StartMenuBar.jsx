@@ -24,7 +24,7 @@ function StartMenuBar() {
 
 	return (
 		<>
-			<AppBar position="absolute">
+			<AppBar position="absolute" style={{ height: '52px' }}>
 				<Toolbar style={{ justifyContent: 'space-between' }}>
 					<div id="start-button">
 						<Button
