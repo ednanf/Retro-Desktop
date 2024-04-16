@@ -1,7 +1,11 @@
+// React and libraries
 import React from 'react';
 import { styleReset } from 'react95';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+
+// Components
 import StartMenuBar from './components/StartMenuBar/StartMenuBar';
+import DesktopIconsContainer from './components/DesktopIcons/DesktopIconsContainer';
 
 // Theme
 import original from 'react95/dist/themes/original';
@@ -38,6 +42,7 @@ function App() {
 			<ThemeProvider theme={original}>
 				<div className="no-scroll">
 					<main className="desktop">
+						<DesktopIconsContainer />
 						<div id="start-bar">
 							<StartMenuBar />
 						</div>
