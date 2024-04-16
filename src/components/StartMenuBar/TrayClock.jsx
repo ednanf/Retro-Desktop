@@ -27,7 +27,12 @@ function TrayClock() {
 	setInterval(updateTime, 1000);
 
 	return (
-		<Tooltip text={`${date} ${currentTime}`} enterDelay={100} leaveDelay={500}>
+		<Tooltip
+			text={`${date} ${currentTime}`}
+			enterDelay={100}
+			leaveDelay={500}
+			style={{ position: 'absolute', left: -10 }}
+		>
 			<p>{currentTime}</p>
 		</Tooltip>
 	);

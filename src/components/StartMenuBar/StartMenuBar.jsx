@@ -14,10 +14,7 @@ import startMenuIcn from '../../assets/Icons/start-menu-icon.png';
 import displayPropIcn from '../../assets/Icons/display-properties-tray-icon.png';
 import './StartMenuBar.css';
 
-// const Wrapper = styled.div`
-// 	padding: 5rem;
-// 	background: ${({ theme }) => theme.desktopBackground};
-// `;
+// TODO: Add tooltip to start button
 
 function StartMenuBar() {
 	const [open, setOpen] = useState(false);
