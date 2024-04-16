@@ -36,11 +36,13 @@ function App() {
 		<>
 			<GlobalStyles />
 			<ThemeProvider theme={original}>
-				<main className="desktop">
-					<div id="start-bar">
-						<StartMenuBar />
-					</div>
-				</main>
+				<div className="no-scroll">
+					<main className="desktop">
+						<div id="start-bar">
+							<StartMenuBar />
+						</div>
+					</main>
+				</div>
 			</ThemeProvider>
 		</>
 	);
