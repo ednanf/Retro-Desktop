@@ -59,6 +59,7 @@ function StartMenuBar() {
 								alignItems: 'center',
 							}}
 						>
+							{/* TODO: investigate why this icon moves when opening the start menu bar */}
 							<img src={displayPropIcn} alt="Display properties icon" />
 							<TrayClock />
 						</div>
