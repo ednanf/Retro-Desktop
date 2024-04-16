@@ -14,7 +14,7 @@ import startMenuIcn from '../../assets/Icons/start-menu-icon.png';
 import displayPropIcn from '../../assets/Icons/display-properties-tray-icon.png';
 import './StartMenuBar.css';
 
-// TODO: Add tooltip to start button
+// TODO: Add tooltip to start button "Click here to begin"
 
 function StartMenuBar() {
 	const [open, setOpen] = useState(false);

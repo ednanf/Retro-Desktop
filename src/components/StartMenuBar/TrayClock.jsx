@@ -1,18 +1,26 @@
 import React, { useState } from 'react';
 import { Tooltip } from 'react95';
 
-// TODO: Add tooltip showing full date and time (with no seconds) when hovering the clock
 function TrayClock() {
 	let time = new Date().toLocaleTimeString([], {
 		hour: '2-digit',
 		minute: '2-digit',
 	});
 
-	let date = new Date().toLocaleDateString([], {
+	// HACK: Has to be like this, otherwise it won't format like Windows95!
+	let dateDay = new Date().toLocaleDateString([], {
 		day: 'numeric',
+	});
+
+	let dateMonth = new Date().toLocaleDateString([], {
 		month: 'long',
+	});
+
+	let dateYear = new Date().toLocaleDateString([], {
 		year: 'numeric',
 	});
+
+	let date = `${dateDay} ${dateMonth} ${dateYear}`;
 
 	const [currentTime, setCurrentTime] = useState(time);
 
@@ -31,7 +39,7 @@ function TrayClock() {
 			text={date}
 			enterDelay={100}
 			leaveDelay={500}
-			style={{ position: 'absolute', left: -10 }}
+			style={{ position: '', left: '2px' }}
 		>
 			<p>{currentTime}</p>
 		</Tooltip>
