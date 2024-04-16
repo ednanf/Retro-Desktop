@@ -1,0 +1,11 @@
+.desktop {
+	background-color: rgb(47, 115, 117);
+	min-height: 100vh;
+	min-width: 100vh;
+}
+
+#start-bar {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
