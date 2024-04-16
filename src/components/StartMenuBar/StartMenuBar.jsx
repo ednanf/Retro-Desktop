@@ -9,10 +9,12 @@ import {
 	Frame,
 } from 'react95';
 import TrayClock from './TrayClock';
+import TrayIcon from './TrayIcon';
 
+import './StartMenuBar.css';
 import startMenuIcn from '../../assets/Icons/start-menu-icon.png';
 import displayPropIcn from '../../assets/Icons/display-properties-tray-icon.png';
-import './StartMenuBar.css';
+import speakersIcn from '../../assets/Icons/speakers-tray-icon.png';
 
 // TODO: Add tooltip to start button "Click here to begin"
 
@@ -47,7 +49,10 @@ function StartMenuBar() {
 							</MenuList>
 						)}
 					</div>
-					<Frame variant="well" style={{ padding: '0.1rem 0.4rem' }}>
+					<Frame
+						variant="well"
+						style={{ padding: '0.1rem 0.4rem 0rem 0.4rem' }}
+					>
 						<div
 							style={{
 								justifyContents: 'space-between',
@@ -56,8 +61,11 @@ function StartMenuBar() {
 								alignItems: 'center',
 							}}
 						>
-							{/* TODO: investigate why this icon moves when opening the start menu bar */}
-							<img src={displayPropIcn} alt="Display properties icon" />
+							<TrayIcon
+								imgName={speakersIcn}
+								imgAlt="Speakers"
+								tooltipText="Volume"
+							/>
 							<TrayClock />
 						</div>
 					</Frame>
