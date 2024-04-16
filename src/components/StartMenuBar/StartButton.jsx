@@ -8,6 +8,8 @@ function StartButton() {
 
 	// TODO: hide tooltip when clicking on start button
 	// TODO: hide start menu when clicking on desktop
+	// TODO: Move CSS rules to a separate file
+
 	return (
 		<div id="start-button">
 			<Tooltip

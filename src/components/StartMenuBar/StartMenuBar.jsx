@@ -11,6 +11,7 @@ import TrayIcon from './TrayIcon';
 import './StartMenuBar.css';
 import speakersIcn from '../../assets/Icons/speakers-tray-icon.png';
 
+// TODO: Move CSS rules to a separate file
 function StartMenuBar() {
 	return (
 		<>

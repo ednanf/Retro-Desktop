@@ -16,6 +16,8 @@ import ms_sans_serif_bold from 'react95/dist/fonts/ms_sans_serif_bold.woff2';
 
 import './App.css';
 
+// TODO: Make Favicon
+
 const GlobalStyles = createGlobalStyle`
   ${styleReset}
   @font-face {
