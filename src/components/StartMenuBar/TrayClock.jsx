@@ -37,8 +37,8 @@ function TrayClock() {
 	return (
 		<Tooltip
 			text={date}
-			enterDelay={100}
-			leaveDelay={500}
+			enterDelay={400}
+			leaveDelay={100}
 			style={{ left: '25px' }}
 		>
 			<p>{currentTime}</p>
