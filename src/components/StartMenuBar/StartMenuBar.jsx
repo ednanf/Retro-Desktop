@@ -13,7 +13,6 @@ import TrayIcon from './TrayIcon';
 
 import './StartMenuBar.css';
 import startMenuIcn from '../../assets/Icons/start-menu-icon.png';
-import displayPropIcn from '../../assets/Icons/display-properties-tray-icon.png';
 import speakersIcn from '../../assets/Icons/speakers-tray-icon.png';
 
 // TODO: Add tooltip to start button "Click here to begin"
