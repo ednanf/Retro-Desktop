@@ -1,4 +1,19 @@
-button {
+#desktop-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background: none;
 	border: none;
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+
+#desktop-icon img {
+	height: 32px;
+	width: 32px;
+}
+
+#desktop-icon-text {
+	font-size: 13px;
+	margin-top: 8px;
 }

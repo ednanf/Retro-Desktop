@@ -1,0 +1,14 @@
+#icons-container {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin: 18px 10px;
+}
+
+#icons-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5px;
+}
