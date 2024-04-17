@@ -11,10 +11,11 @@ function ResumeTextField({ text }) {
 	return (
 		<TextInput
 			multiline
-			rows={28}
+			fullHeight
 			variant="default"
 			value={textField}
 			onChange={handleChange}
+			style={{ height: '558px' }}
 		/>
 	);
 }
