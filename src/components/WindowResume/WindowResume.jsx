@@ -1,19 +1,13 @@
-import React, { useRef } from 'react';
-import Moveable from 'react-moveable';
+import React from 'react';
 
 import { Resume } from '../../util/Resume';
 import WindowBase from '../WindowBase/WindowBase';
 import ResumeTextField from './ResumeTextField';
 
-// FIXME: Make the text editable again
-// TODO: Make only the window draggable, not the textbox
-
 function WindowResume() {
-	const targetRef = useRef();
-
 	return (
 		<>
-			<div className="target" ref={targetRef}>
+			<div className="target">
 				<WindowBase
 					resizable
 					height="644"
@@ -24,18 +18,6 @@ function WindowResume() {
 					<ResumeTextField text={Resume} />
 				</WindowBase>
 			</div>
-			<Moveable
-				target={targetRef}
-				draggable={true}
-				throttleDrag={1}
-				edgeDraggable={false}
-				startDragRotate={0}
-				throttleDragRotate={0}
-				zoom={0}
-				onDrag={(e) => {
-					e.target.style.transform = e.transform;
-				}}
-			/>
 		</>
 	);
 }
