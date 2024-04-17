@@ -10,6 +10,8 @@ import documentIcn from '../../assets/Icons/document-icon.png';
 import folderIcn from '../../assets/Icons/folder-icon.png';
 import weatherIcn from '../../assets/Icons/sunrise-icon.png';
 
+// TODO: Change resume's icon to txt icon
+
 function DesktopIconsContainer() {
 	return (
 		<div id="icons-container">
@@ -18,7 +20,7 @@ function DesktopIconsContainer() {
 				<DesktopIcon iconImage={networkIcn} iconText="Network Neighborhood" />
 				<DesktopIcon iconImage={mailIcon} iconText="Inbox" />
 				<DesktopIcon iconImage={recycleBinIcn} iconText="Recycle Bin" />
-				<DesktopIcon iconImage={documentIcn} iconText="Resume" />
+				<DesktopIcon iconImage={documentIcn} iconText="Resume.txt" />
 				<DesktopIcon iconImage={folderIcn} iconText="Portfolio" />
 				<DesktopIcon iconImage={weatherIcn} iconText="Weather.exe" />
 			</div>
