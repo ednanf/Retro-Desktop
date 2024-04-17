@@ -14,6 +14,9 @@
 }
 
 #desktop-icon-text {
+	width: 85px;
+	text-align: center;
+	align-items: center;
 	font-size: 13px;
 	margin-top: 8px;
 }
