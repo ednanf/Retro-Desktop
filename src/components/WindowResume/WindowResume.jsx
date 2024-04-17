@@ -8,9 +8,9 @@ import ResumeTextField from './ResumeTextField';
 function WindowResume() {
 	return (
 		<WindowBase
-			height="650"
+			height="644"
 			width="600"
-			windowTitle="Portfolio"
+			windowTitle="Resume - Notepad"
 			toolbarButtonsArr={['File', 'Edit', 'Search', 'Help']}
 		>
 			<ResumeTextField text={Resume} />

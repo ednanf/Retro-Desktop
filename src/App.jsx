@@ -6,6 +6,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 // Components
 import StartMenuBar from './components/StartMenuBar/StartMenuBar';
 import DesktopIconsContainer from './components/DesktopIcons/DesktopIconsContainer';
+import WindowResume from './components/WindowResume/WindowResume';
 
 // Theme
 import original from 'react95/dist/themes/original';
@@ -47,6 +48,17 @@ function App() {
 						<DesktopIconsContainer />
 						<div id="start-bar">
 							<StartMenuBar />
+						</div>
+						<div
+							id="window"
+							style={{
+								position: 'absolute',
+								top: '50%',
+								left: '50%',
+								transform: 'translate(-50%, -50%)',
+							}}
+						>
+							<WindowResume />
 						</div>
 					</main>
 				</div>

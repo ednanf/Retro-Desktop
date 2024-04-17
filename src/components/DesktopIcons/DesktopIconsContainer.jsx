@@ -20,7 +20,7 @@ function DesktopIconsContainer() {
 				<DesktopIcon iconImage={networkIcn} iconText="Network Neighborhood" />
 				<DesktopIcon iconImage={mailIcon} iconText="Inbox" />
 				<DesktopIcon iconImage={recycleBinIcn} iconText="Recycle Bin" />
-				<DesktopIcon iconImage={documentIcn} iconText="Resume.txt" />
+				<DesktopIcon iconImage={documentIcn} iconText="Resume" />
 				<DesktopIcon iconImage={folderIcn} iconText="Portfolio" />
 				<DesktopIcon iconImage={weatherIcn} iconText="Weather.exe" />
 			</div>
