@@ -1,4 +1,5 @@
 import React from 'react';
+import { Tooltip } from 'react95';
 import { useStore } from '../../util/Store';
 
 import DesktopIcon from './DesktopIcon/DesktopIcon';
@@ -24,11 +25,13 @@ function DesktopIconsContainer() {
 				<DesktopIcon iconImage={networkIcn} iconText="Network Neighborhood" />
 				<DesktopIcon iconImage={mailIcon} iconText="Inbox" />
 				<DesktopIcon iconImage={recycleBinIcn} iconText="Recycle Bin" />
-				<DesktopIcon
-					iconImage={documentIcn}
-					iconText="Resume"
-					onClick={showResume}
-				/>
+				<Tooltip text="My resume" enterDelay={400} leaveDelay={0}>
+					<DesktopIcon
+						iconImage={documentIcn}
+						iconText="Resume"
+						onClick={showResume}
+					/>
+				</Tooltip>
 				<DesktopIcon iconImage={folderIcn} iconText="Portfolio" />
 				<DesktopIcon iconImage={weatherIcn} iconText="Weather.exe" />
 			</div>

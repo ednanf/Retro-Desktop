@@ -2,6 +2,7 @@
 import React from 'react';
 import { styleReset } from 'react95';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { useStore } from './util/Store';
 
 // Components
 import StartMenuBar from './components/StartMenuBar/StartMenuBar';
@@ -16,8 +17,6 @@ import ms_sans_serif from 'react95/dist/fonts/ms_sans_serif.woff2';
 import ms_sans_serif_bold from 'react95/dist/fonts/ms_sans_serif_bold.woff2';
 
 import './App.css';
-
-import { useStore } from './util/Store';
 
 // TODO: Make Favicon
 
