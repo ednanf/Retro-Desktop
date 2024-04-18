@@ -6,7 +6,7 @@ import DesktopIcon from './DesktopIcon/DesktopIcon';
 
 import './DesktopIconsContainer.css';
 import myComputerIcn from '../../assets/Icons/my-computer-icon.png';
-import networkIcn from '../../assets/Icons/network-neighborhood-icon.png';
+import ieIcn from '../../assets/Icons/ie-icon.png';
 import mailIcon from '../../assets/Icons/mail-icon.png';
 import recycleBinIcn from '../../assets/Icons/recycle-bin-icon.png';
 import documentIcn from '../../assets/Icons/document-icon.png';
@@ -22,9 +22,9 @@ function DesktopIconsContainer() {
 		<div id="icons-container">
 			<div id="icons-column">
 				<DesktopIcon iconImage={myComputerIcn} iconText="My Computer" />
-				<DesktopIcon iconImage={networkIcn} iconText="Network Neighborhood" />
 				<DesktopIcon iconImage={mailIcon} iconText="Inbox" />
 				<DesktopIcon iconImage={recycleBinIcn} iconText="Recycle Bin" />
+				<DesktopIcon iconImage={ieIcn} iconText="Internet Explorer" />
 				<Tooltip text="My resume" enterDelay={400} leaveDelay={0}>
 					<DesktopIcon
 						iconImage={documentIcn}
