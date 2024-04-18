@@ -1,0 +1,9 @@
+#url-bar {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+#url-bar p {
+	font-size: 16px;
+}
