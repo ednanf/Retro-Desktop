@@ -3,8 +3,8 @@ import { Toolbar, Button, Separator } from 'react95';
 
 import './IEToolbar.css';
 
-import openFdrIcn from '../../../assets/Icons/IE-Toolbar-Icons/open-folder-icon.png';
-import homeIcn from '../../../assets/Icons/IE-Toolbar-Icons/homepage-icon.png';
+import openFdrIcn from '../../../assets/Icons/IEToolbarIcons/open-folder-icon.png';
+import homeIcn from '../../../assets/Icons/IEToolbarIcons/homepage-icon.png';
 
 function IEToolbar() {
 	return (
