@@ -7,6 +7,7 @@ import { useStore } from './util/Store';
 // Components
 import StartMenuBar from './components/StartMenuBar/StartMenuBar';
 import DesktopIconsContainer from './components/DesktopIcons/DesktopIconsContainer';
+import WindowIE from './components/WindowIE/WindowIE';
 import WindowResume from './components/WindowResume/WindowResume';
 
 // Theme
@@ -40,6 +41,7 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 function App() {
+	const ieVisible = useStore((state) => state.ieVisible);
 	const resumeVisible = useStore((state) => state.resumeVisible);
 
 	return (
@@ -61,6 +63,7 @@ function App() {
 								transform: 'translate(-50%, -50%)',
 							}}
 						>
+							{ieVisible && <WindowIE />}
 							{resumeVisible && <WindowResume />}
 						</div>
 					</main>
