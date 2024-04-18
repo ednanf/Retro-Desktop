@@ -19,6 +19,7 @@ function WindowBase({
 	height,
 	width,
 	resizable = false,
+	closeWindow,
 	children,
 }) {
 	// Sets the target component that will be moved - "target" prop
@@ -35,7 +36,7 @@ function WindowBase({
 		>
 			<WindowHeader className="window-header" ref={dragTargetRef}>
 				<span>{windowTitle}</span>
-				<Button>
+				<Button onClick={closeWindow}>
 					<img src={closeIcn} alt="Close icon" className="close-icon" />
 				</Button>
 			</WindowHeader>

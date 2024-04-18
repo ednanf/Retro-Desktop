@@ -1,4 +1,6 @@
 import React from 'react';
+import { useStore } from '../../util/Store';
+
 import DesktopIcon from './DesktopIcon/DesktopIcon';
 
 import './DesktopIconsContainer.css';
@@ -13,6 +15,8 @@ import weatherIcn from '../../assets/Icons/sunrise-icon.png';
 // TODO: Change resume's icon to txt icon
 
 function DesktopIconsContainer() {
+	const showResume = useStore((state) => state.showResume);
+
 	return (
 		<div id="icons-container">
 			<div id="icons-column">
@@ -20,7 +24,11 @@ function DesktopIconsContainer() {
 				<DesktopIcon iconImage={networkIcn} iconText="Network Neighborhood" />
 				<DesktopIcon iconImage={mailIcon} iconText="Inbox" />
 				<DesktopIcon iconImage={recycleBinIcn} iconText="Recycle Bin" />
-				<DesktopIcon iconImage={documentIcn} iconText="Resume" />
+				<DesktopIcon
+					iconImage={documentIcn}
+					iconText="Resume"
+					onClick={showResume}
+				/>
 				<DesktopIcon iconImage={folderIcn} iconText="Portfolio" />
 				<DesktopIcon iconImage={weatherIcn} iconText="Weather.exe" />
 			</div>
