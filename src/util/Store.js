@@ -8,4 +8,13 @@ export const useStore = create((set) => ({
 	hideResume: () => {
 		set({ resumeVisible: false });
 	},
+
+	// TODO: change to false after done with the window
+	ieVisible: true,
+	showIE: () => {
+		set({ ieVisible: true });
+	},
+	hideIE: () => {
+		set({ ieVisible: false });
+	},
 }));
