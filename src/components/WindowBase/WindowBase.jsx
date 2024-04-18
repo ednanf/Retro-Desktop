@@ -5,7 +5,7 @@ import { Window, WindowHeader, Button } from 'react95';
 import WindowToolbar from '../WindowToolbar/WindowToolbar';
 
 import './WindowBase.css';
-import closeIcn from '../../assets/Icons/close-icon.png';
+import closeIcn from '../../assets/Icons/UIIcons/close-icon.png';
 
 // TODO: make toolbar be optional
 // To make it optional, make a boolean prop to render it only if true
