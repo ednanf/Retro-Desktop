@@ -17,6 +17,8 @@ import ms_sans_serif_bold from 'react95/dist/fonts/ms_sans_serif_bold.woff2';
 
 import './App.css';
 
+import { useStore } from './util/Store';
+
 // TODO: Make Favicon
 
 const GlobalStyles = createGlobalStyle`
@@ -39,6 +41,8 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 function App() {
+	const resumeVisible = useStore((state) => state.resumeVisible);
+
 	return (
 		<>
 			<GlobalStyles />
@@ -58,7 +62,7 @@ function App() {
 								transform: 'translate(-50%, -50%)',
 							}}
 						>
-							<WindowResume />
+							{resumeVisible && <WindowResume />}
 						</div>
 					</main>
 				</div>
