@@ -3,6 +3,7 @@ import { useStore } from '../../util/Store';
 
 import WindowBase from '../WindowBase/WindowBase';
 import PortfolioToolbar from './PortfolioToolbar/PortfolioToolbar';
+import PortfolioContent from './PortfolioContent/PortfolioContent';
 
 import openFolderSmIcn from '../../assets/Icons/WindowTitleIcons/open-folder-icon.png';
 
@@ -19,6 +20,7 @@ function WindowPortfolio() {
 			closeWindow={closeWindow}
 		>
 			<PortfolioToolbar />
+			<PortfolioContent />
 		</WindowBase>
 	);
 }
