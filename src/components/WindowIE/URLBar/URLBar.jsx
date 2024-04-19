@@ -2,6 +2,8 @@ import React from 'react';
 import { Select } from 'react95';
 import './URLBar.css';
 
+// TODO: add content to the select component (where the url should be)
+
 function URLBar() {
 	const urls = ['www.bosta.com'];
 

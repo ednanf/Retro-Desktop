@@ -13,6 +13,7 @@ import undoIcn from 'pixelarticons/svg/undo.svg';
 import crossIcn from '../../../assets/Icons/ToolbarIcons/cross-icon.png';
 import pointIcn from '../../../assets/Icons/ToolbarIcons/point-sheet-icon.png';
 
+// TODO: add text to the select component
 function PortfolioToolbar() {
 	return (
 		<>

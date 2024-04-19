@@ -18,8 +18,6 @@ import cutIcn from 'pixelarticons/svg/cut.svg';
 import copyIcn from 'pixelarticons/svg/copy.svg';
 import pasteIcn from 'pixelarticons/svg/clipboard.svg';
 
-// TODO: Make a new component for the icons on toolbar - ToolbarIcon
-
 function IEToolbar() {
 	return (
 		<>
