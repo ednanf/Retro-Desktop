@@ -19,6 +19,7 @@ function WindowBase({
 	height,
 	width,
 	resizable = false,
+	headerIcn,
 	closeWindow,
 	children,
 }) {
@@ -35,7 +36,14 @@ function WindowBase({
 			ref={targetRef}
 		>
 			<WindowHeader className="window-header" ref={dragTargetRef}>
-				<span>{windowTitle}</span>
+				<div className="window-title">
+					<img
+						src={headerIcn}
+						alt="Window header icon"
+						className="header-icon"
+					/>
+					<span>{windowTitle}</span>
+				</div>
 				<Button onClick={closeWindow}>
 					<img src={closeIcn} alt="Close icon" className="close-icon" />
 				</Button>

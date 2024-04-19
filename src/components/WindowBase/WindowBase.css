@@ -5,6 +5,14 @@
 	align-items: center;
 }
 
+.header-icon {
+	position: relative;
+	top: 4px;
+	height: 22px;
+	width: 22px;
+	margin-right: 3px;
+}
+
 .close-icon {
 	position: inherit;
 	right: 0px;

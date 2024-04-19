@@ -5,6 +5,8 @@ import { Resume } from '../../util/Resume';
 import WindowBase from '../WindowBase/WindowBase';
 import ResumeTextField from './ResumeTextField';
 
+import headerIcn from '../../assets/Icons/WindowTitleIcons/document-title-icon.png';
+
 function WindowResume() {
 	const hideResume = useStore((state) => state.hideResume);
 
@@ -13,6 +15,7 @@ function WindowResume() {
 			height="644"
 			width="600"
 			windowTitle="Resume - Notepad"
+			headerIcn={headerIcn}
 			toolbarButtonsArr={['File', 'Edit', 'Search', 'Help']}
 			closeWindow={hideResume}
 		>
