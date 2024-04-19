@@ -1,6 +1,14 @@
 import { create } from 'zustand';
 
 export const useStore = create((set) => ({
+	ieVisible: false,
+	showIE: () => {
+		set({ ieVisible: true });
+	},
+	hideIE: () => {
+		set({ ieVisible: false });
+	},
+
 	resumeVisible: false,
 	showResume: () => {
 		set({ resumeVisible: true });
@@ -9,12 +17,11 @@ export const useStore = create((set) => ({
 		set({ resumeVisible: false });
 	},
 
-	// TODO: change to false after done with the window
-	ieVisible: true,
-	showIE: () => {
-		set({ ieVisible: true });
+	portfolioVisible: false,
+	showPortfolio: () => {
+		set({ portfolioVisible: true });
 	},
-	hideIE: () => {
-		set({ ieVisible: false });
+	hidePorfolio: () => {
+		set({ portfolioVisible: false });
 	},
 }));

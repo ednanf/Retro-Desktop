@@ -9,6 +9,7 @@ import StartMenuBar from './components/StartMenuBar/StartMenuBar';
 import DesktopIconsContainer from './components/DesktopIcons/DesktopIconsContainer';
 import WindowIE from './components/WindowIE/WindowIE';
 import WindowResume from './components/WindowResume/WindowResume';
+import WindowPortfolio from './components/WindowPortfolio/WindowPortfolio';
 
 // Theme
 import original from 'react95/dist/themes/original';
@@ -43,6 +44,7 @@ const GlobalStyles = createGlobalStyle`
 function App() {
 	const ieVisible = useStore((state) => state.ieVisible);
 	const resumeVisible = useStore((state) => state.resumeVisible);
+	const portfolioVisible = useStore((state) => state.portfolioVisible);
 
 	return (
 		<>
@@ -65,6 +67,7 @@ function App() {
 						>
 							{ieVisible && <WindowIE />}
 							{resumeVisible && <WindowResume />}
+							{portfolioVisible && <WindowPortfolio />}
 						</div>
 					</main>
 				</div>

@@ -18,6 +18,7 @@ import weatherIcn from '../../assets/Icons/DesktopIcons/sunrise-icon.png';
 function DesktopIconsContainer() {
 	const showIE = useStore((state) => state.showIE);
 	const showResume = useStore((state) => state.showResume);
+	const showPortfolio = useStore((state) => state.showPortfolio);
 
 	return (
 		<div id="icons-container">
@@ -39,8 +40,14 @@ function DesktopIconsContainer() {
 						onClick={showResume}
 					/>
 				</Tooltip>
-				<DesktopIcon iconImage={folderIcn} iconText="Portfolio" />
-				<DesktopIcon iconImage={weatherIcn} iconText="Weather.exe" />
+				<Tooltip text="My Portfolio" enterDelay={1000} leaveDelay={0}>
+					<DesktopIcon
+						iconImage={folderIcn}
+						iconText="Portfolio"
+						onClick={showPortfolio}
+					/>
+				</Tooltip>
+				<DesktopIcon iconImage={weatherIcn} iconText="Weather" />
 			</div>
 		</div>
 	);
