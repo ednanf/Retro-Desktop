@@ -3,15 +3,19 @@ import { Toolbar, Separator, Select } from 'react95';
 import ButtonToolbar from '../../ButtonToolbar/ButtonToolbar';
 
 import './PortfolioToolbar.css';
-import folderIcn from '../../../assets/Icons/ToolbarIcons/open-folder-icon.png';
+import backIcn from '../../../assets/Icons/ToolbarIcons/back-icon.svg';
 import checkFolderIcn from '../../../assets/Icons/ToolbarIcons/check-folder-icon.png';
 import deleteFileIcon from '../../../assets/Icons/ToolbarIcons/erase-file-icon.png';
-import cutIcn from 'pixelarticons/svg/cut.svg';
-import copyIcn from 'pixelarticons/svg/copy.svg';
-import pasteIcn from 'pixelarticons/svg/clipboard.svg';
-import undoIcn from 'pixelarticons/svg/undo.svg';
-import crossIcn from '../../../assets/Icons/ToolbarIcons/cross-icon.png';
-import pointIcn from '../../../assets/Icons/ToolbarIcons/point-sheet-icon.png';
+import cutIcn from '../../../assets/Icons/ToolbarIcons/cut-icon.svg';
+import copyIcn from '../../../assets/Icons/ToolbarIcons/copy-icon.svg';
+import pasteIcn from '../../../assets/Icons/ToolbarIcons/paste-icon.svg';
+import undoIcn from '../../../assets/Icons/ToolbarIcons/undo-icon.svg';
+import deleteIcn from '../../../assets/Icons/ToolbarIcons/delete-icon.svg';
+import pointIcn from '../../../assets/Icons/ToolbarIcons/point-sheet-icon.svg';
+import listLrgIcn from '../../../assets/Icons/ToolbarIcons/list-large-icon.svg';
+import listIcn from '../../../assets/Icons/ToolbarIcons/list-icon.svg';
+import list2Icn from '../../../assets/Icons/ToolbarIcons/list-2-icon.svg';
+import detailsIcn from '../../../assets/Icons/ToolbarIcons/list-details-icon.svg';
 
 // TODO: add text to the select component
 function PortfolioToolbar() {
@@ -30,7 +34,7 @@ function PortfolioToolbar() {
 				/>
 				<div id="portfolio-icon-container">
 					<div id="portfolio-icons-group">
-						<ButtonToolbar icon={folderIcn} />
+						<ButtonToolbar icon={backIcn} />
 					</div>
 					<div id="portfolio-icons-group">
 						<ButtonToolbar icon={checkFolderIcn} />
@@ -45,8 +49,14 @@ function PortfolioToolbar() {
 						<ButtonToolbar icon={undoIcn} />
 					</div>
 					<div id="portfolio-icons-group">
-						<ButtonToolbar icon={crossIcn} />
+						<ButtonToolbar icon={deleteIcn} />
 						<ButtonToolbar icon={pointIcn} />
+					</div>
+					<div id="portfolio-icons-group">
+						<ButtonToolbar icon={listLrgIcn} />
+						<ButtonToolbar icon={listIcn} />
+						<ButtonToolbar icon={list2Icn} />
+						<ButtonToolbar icon={detailsIcn} />
 					</div>
 				</div>
 			</Toolbar>

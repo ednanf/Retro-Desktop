@@ -4,19 +4,19 @@ import ButtonToolbar from '../../ButtonToolbar/ButtonToolbar';
 
 import './IEToolbar.css';
 
-import openFdrIcn from '../../../assets/Icons/ToolbarIcons/open-folder-icon.png';
+import openFdrIcn from '../../../assets/Icons/ToolbarIcons/open-folder-icon.svg';
 import homeIcn from '../../../assets/Icons/ToolbarIcons/homepage-icon.png';
 import chevronLeftIcn from 'pixelarticons/svg/chevron-left.svg';
 import chevronRightIcn from 'pixelarticons/svg/chevron-right.svg';
 import stopIcn from 'pixelarticons/svg/file-delete.svg';
-import reloadIcn from 'pixelarticons/svg/repeat.svg';
+import reloadIcn from '../../../assets/Icons/ToolbarIcons/refresh-icon.svg';
 import newFolderIcn from '../../../assets/Icons/ToolbarIcons/new-folder.png';
 import downloadIcn from '../../../assets/Icons/ToolbarIcons/download-icon.png';
-import increaseIcn from '../../../assets/Icons/ToolbarIcons/increase-size-icon.png';
-import decreaseIcn from '../../../assets/Icons/ToolbarIcons/decrease-size-icon.png';
-import cutIcn from 'pixelarticons/svg/cut.svg';
-import copyIcn from 'pixelarticons/svg/copy.svg';
-import pasteIcn from 'pixelarticons/svg/clipboard.svg';
+import increaseIcn from '../../../assets/Icons/ToolbarIcons/font-big-icon.svg';
+import decreaseIcn from '../../../assets/Icons/ToolbarIcons/font-small-icon.svg';
+import cutIcn from '../../../assets/Icons/ToolbarIcons/cut-icon.svg';
+import copyIcn from '../../../assets/Icons/ToolbarIcons/copy-icon.svg';
+import pasteIcn from '../../../assets/Icons/ToolbarIcons/paste-icon.svg';
 
 function IEToolbar() {
 	return (
