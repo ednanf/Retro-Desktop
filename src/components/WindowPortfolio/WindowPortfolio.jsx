@@ -2,6 +2,8 @@ import React from 'react';
 import { useStore } from '../../util/Store';
 
 import WindowBase from '../WindowBase/WindowBase';
+import PortfolioToolbar from './PortfolioToolbar/PortfolioToolbar';
+
 import openFolderSmIcn from '../../assets/Icons/WindowTitleIcons/open-folder-icon.png';
 
 function WindowPortfolio() {
@@ -15,7 +17,9 @@ function WindowPortfolio() {
 			height="600"
 			width="800"
 			closeWindow={closeWindow}
-		></WindowBase>
+		>
+			<PortfolioToolbar />
+		</WindowBase>
 	);
 }
 
