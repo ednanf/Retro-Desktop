@@ -9,4 +9,5 @@
 - Zustand (state management) (https://zustand-demo.pmnd.rs/)
 - Moveable (move windows freely)(https://www.npmjs.com/package/react-moveable)
 - React95 (UI components and fonts) (https://storybook.react95.io/?path=/docs/docs-welcome-to-react95--page)
+- PixelArtIcons (https://pixelarticons.com/)
 - Windows98 Icons (All credits to Microsoft) (https://win98icons.alexmeub.com/)

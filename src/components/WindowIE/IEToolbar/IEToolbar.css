@@ -1,4 +1,10 @@
 #ie-toolbar {
 	display: flex;
-	gap: 2px;
+	gap: 8px;
+	height: 30px;
+}
+
+.toolbar-group {
+	display: flex;
+	gap: 1px;
 }

@@ -13,7 +13,7 @@ import documentIcn from '../../assets/Icons/DesktopIcons/document-icon.png';
 import folderIcn from '../../assets/Icons/DesktopIcons/folder-icon.png';
 import weatherIcn from '../../assets/Icons/DesktopIcons/sunrise-icon.png';
 
-// TODO: Change resume's icon to txt icon
+//TODO : fix IE icon text to be a column - it's too wide right now
 
 function DesktopIconsContainer() {
 	const showIE = useStore((state) => state.showIE);
