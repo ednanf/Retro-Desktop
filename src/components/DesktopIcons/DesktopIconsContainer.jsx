@@ -25,14 +25,14 @@ function DesktopIconsContainer() {
 				<DesktopIcon iconImage={myComputerIcn} iconText="My Computer" />
 				<DesktopIcon iconImage={mailIcon} iconText="Inbox" />
 				<DesktopIcon iconImage={recycleBinIcn} iconText="Recycle Bin" />
-				<Tooltip text="My Socials" enterDelay={400} leaveDelay={0}>
+				<Tooltip text="My Socials" enterDelay={1000} leaveDelay={0}>
 					<DesktopIcon
 						iconImage={ieIcn}
 						iconText="Internet Explorer"
 						onClick={showIE}
 					/>
 				</Tooltip>
-				<Tooltip text="My Resume" enterDelay={400} leaveDelay={0}>
+				<Tooltip text="My Resume" enterDelay={1000} leaveDelay={0}>
 					<DesktopIcon
 						iconImage={documentIcn}
 						iconText="Resume"
