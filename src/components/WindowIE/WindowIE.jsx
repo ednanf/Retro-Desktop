@@ -8,6 +8,8 @@ import URLBar from './URLBar/URLBar';
 import IEContent from './IEContent/IEContent';
 import titleIcn from '../../assets/Icons/WindowTitleIcons/ie-window-icn.png';
 
+// TODO: try to find and add Windows logo to the right of address/toolbar - look for references
+
 function WindowIE() {
 	const closeWindow = useStore((state) => state.hideIE);
 
