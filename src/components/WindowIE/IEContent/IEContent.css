@@ -1,0 +1,10 @@
+#ie-container {
+	height: 490px;
+	width: 800px;
+}
+
+#ie-content {
+	height: 432px;
+	width: 787px;
+	padding: 1rem;
+}

@@ -5,6 +5,7 @@ import './WindowIE.css';
 import WindowBase from '../WindowBase/WindowBase';
 import IEToolbar from './IEToolbar/IEToolbar';
 import URLBar from './URLBar/URLBar';
+import IEContent from './IEContent/IEContent';
 
 function WindowIE() {
 	const closeWindow = useStore((state) => state.hideIE);
@@ -19,6 +20,7 @@ function WindowIE() {
 		>
 			<IEToolbar />
 			<URLBar />
+			<IEContent />
 		</WindowBase>
 	);
 }
