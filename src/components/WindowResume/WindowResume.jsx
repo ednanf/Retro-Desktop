@@ -5,7 +5,7 @@ import { Resume } from '../../util/Resume';
 import WindowBase from '../WindowBase/WindowBase';
 import ResumeTextField from './ResumeTextField';
 
-import headerIcn from '../../assets/Icons/WindowTitleIcons/document-title-icon.png';
+import headerIcn from '../../assets/Icons/WindowTitleIcons/document-title-icon.svg';
 
 function WindowResume() {
 	const hideResume = useStore((state) => state.hideResume);

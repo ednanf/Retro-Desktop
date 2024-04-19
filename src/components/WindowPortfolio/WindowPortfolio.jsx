@@ -5,7 +5,7 @@ import WindowBase from '../WindowBase/WindowBase';
 import PortfolioToolbar from './PortfolioToolbar/PortfolioToolbar';
 import PortfolioContent from './PortfolioContent/PortfolioContent';
 
-import openFolderSmIcn from '../../assets/Icons/WindowTitleIcons/open-folder-icon.png';
+import openFolderSmIcn from '../../assets/Icons/WindowTitleIcons/open-folder-icon.svg';
 
 function WindowPortfolio() {
 	const closeWindow = useStore((state) => state.hidePorfolio);
