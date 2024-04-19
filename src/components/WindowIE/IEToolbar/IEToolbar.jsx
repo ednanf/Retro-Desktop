@@ -1,18 +1,19 @@
 import React from 'react';
-import { Toolbar, Button, Separator } from 'react95';
+import { Toolbar, Separator } from 'react95';
+import ButtonToolbar from '../../ButtonToolbar/ButtonToolbar';
 
 import './IEToolbar.css';
 
-import openFdrIcn from '../../../assets/Icons/IEToolbarIcons/open-folder-icon.png';
-import homeIcn from '../../../assets/Icons/IEToolbarIcons/homepage-icon.png';
+import openFdrIcn from '../../../assets/Icons/ToolbarIcons/open-folder-icon.png';
+import homeIcn from '../../../assets/Icons/ToolbarIcons/homepage-icon.png';
 import chevronLeftIcn from 'pixelarticons/svg/chevron-left.svg';
 import chevronRightIcn from 'pixelarticons/svg/chevron-right.svg';
 import stopIcn from 'pixelarticons/svg/file-delete.svg';
 import reloadIcn from 'pixelarticons/svg/repeat.svg';
-import newFolderIcn from '../../../assets/Icons/IEToolbarIcons/new-folder.png';
-import downloadIcn from '../../../assets/Icons/IEToolbarIcons/download-icon.png';
-import increaseIcn from '../../../assets/Icons/IEToolbarIcons/increase-size-icon.png';
-import decreaseIcn from '../../../assets/Icons/IEToolbarIcons/decrease-size-icon.png';
+import newFolderIcn from '../../../assets/Icons/ToolbarIcons/new-folder.png';
+import downloadIcn from '../../../assets/Icons/ToolbarIcons/download-icon.png';
+import increaseIcn from '../../../assets/Icons/ToolbarIcons/increase-size-icon.png';
+import decreaseIcn from '../../../assets/Icons/ToolbarIcons/decrease-size-icon.png';
 import cutIcn from 'pixelarticons/svg/cut.svg';
 import copyIcn from 'pixelarticons/svg/copy.svg';
 import pasteIcn from 'pixelarticons/svg/clipboard.svg';
@@ -25,107 +26,29 @@ function IEToolbar() {
 			<Separator />
 			<Toolbar id="ie-toolbar">
 				<div className="toolbar-group">
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={openFdrIcn}
-							alt="Open"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={homeIcn}
-							alt="Home"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
+					<ButtonToolbar icon={openFdrIcn} />
+					<ButtonToolbar icon={homeIcn} />
 				</div>
 				<div className="toolbar-group">
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={chevronLeftIcn}
-							alt="Go back"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={chevronRightIcn}
-							alt="Go forward"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
+					<ButtonToolbar icon={chevronLeftIcn} />
+					<ButtonToolbar icon={chevronRightIcn} />
 				</div>
 				<div className="toolbar-group">
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={stopIcn}
-							alt="Stop"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={reloadIcn}
-							alt="Reload"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
+					<ButtonToolbar icon={stopIcn} />
+					<ButtonToolbar icon={reloadIcn} />
 				</div>
 				<div className="toolbar-group">
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={newFolderIcn}
-							alt="Add favorite"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={downloadIcn}
-							alt="Download"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
+					<ButtonToolbar icon={newFolderIcn} />
+					<ButtonToolbar icon={downloadIcn} />
 				</div>
 				<div className="toolbar-group">
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={increaseIcn}
-							alt="Increase text"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={decreaseIcn}
-							alt="Decrese text"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
+					<ButtonToolbar icon={increaseIcn} />
+					<ButtonToolbar icon={decreaseIcn} />
 				</div>
 				<div className="toolbar-group">
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={cutIcn}
-							alt="Cut"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={copyIcn}
-							alt="Copy"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
-					<Button variant="default" style={{ height: '32px', width: '32px' }}>
-						<img
-							src={pasteIcn}
-							alt="Paste"
-							style={{ height: '22px', width: '22px' }}
-						/>
-					</Button>
+					<ButtonToolbar icon={cutIcn} />
+					<ButtonToolbar icon={copyIcn} />
+					<ButtonToolbar icon={pasteIcn} />
 				</div>
 			</Toolbar>
 			<Separator />
