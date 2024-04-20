@@ -4,14 +4,20 @@ import './URLBar.css';
 
 // TODO: add content to the select component (where the url should be)
 
+//export interface SelectOption<T> { label: string; value: T; }
+
 function URLBar() {
-	const urls = ['www.bosta.com'];
+	const urls = [
+		{ label: 'https://www.wherecanifindednan.com', value: '#' },
+		{ label: 'https://www.altavista.com', value: '#' },
+		{ label: 'https://www.aol.com', value: '#' },
+		{ label: 'https://www.yahoo.com', value: '#' },
+	];
 
 	return (
 		<div id="url-bar">
 			<p>Address:</p>
 			<Select
-				defaultValue={2}
 				options={urls}
 				menuMaxHeight={160}
 				width={800}
