@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createElement } from 'react';
 import { Toolbar, Separator, Select } from 'react95';
 import ButtonToolbar from '../../ButtonToolbar/ButtonToolbar';
 
@@ -16,15 +16,26 @@ import listLrgIcn from '../../../assets/Icons/ToolbarIcons/list-large-icon.svg';
 import listIcn from '../../../assets/Icons/ToolbarIcons/list-icon.svg';
 import list2Icn from '../../../assets/Icons/ToolbarIcons/list-2-icon.svg';
 import detailsIcn from '../../../assets/Icons/ToolbarIcons/list-details-icon.svg';
+import openFolderIcn from '../../../assets/Icons/WindowTitleIcons/open-folder-icon.svg';
 
 // TODO: add text to the select component
 function PortfolioToolbar() {
+	const image = <img src={openFolderIcn} style={{ marginRight: '8px' }} />;
+	const label = createElement('span', null, [image, 'Portfolio']);
+
+	const options = [
+		{
+			label,
+			value: '#',
+		},
+	];
+
 	return (
 		<>
 			<Separator />
 			<Toolbar id="portfolio-toolbar">
 				<Select
-					defaultValue={2}
+					options={options}
 					menuMaxHeight={160}
 					width={800}
 					onOpen={(e) => console.log('open', e)}
