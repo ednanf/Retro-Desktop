@@ -7,6 +7,8 @@ import MyComputerContent from './MyComputerContent/MyComputerContent';
 
 import myComputerIcn from '../../assets/Icons/WindowTitleIcons/my-computer-icon.svg';
 
+// TODO: add a way to jump to and from portfolio from the Select menu
+
 function WindowMyComputer() {
 	const closeWindow = useStore((state) => state.hideMyComputer);
 
