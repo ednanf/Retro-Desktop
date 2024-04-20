@@ -3,6 +3,7 @@ import { useStore } from '../../util/Store';
 
 import WindowBase from '../WindowBase/WindowBase';
 import MyComputerToolBar from './MyComputerToolbar/MyComputerToolbar';
+import MyComputerContent from './MyComputerContent/MyComputerContent';
 
 import myComputerIcn from '../../assets/Icons/WindowTitleIcons/my-computer-icon.svg';
 
@@ -19,6 +20,7 @@ function WindowMyComputer() {
 			closeWindow={closeWindow}
 		>
 			<MyComputerToolBar />
+			<MyComputerContent />
 		</WindowBase>
 	);
 }
