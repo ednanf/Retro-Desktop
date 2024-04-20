@@ -16,6 +16,7 @@ import weatherIcn from '../../assets/Icons/DesktopIcons/sunrise-icon.png';
 //TODO : fix IE icon text to be a column - it's too wide right now
 
 function DesktopIconsContainer() {
+	const showMyComputer = useStore((state) => state.showMyComputer);
 	const showIE = useStore((state) => state.showIE);
 	const showResume = useStore((state) => state.showResume);
 	const showPortfolio = useStore((state) => state.showPortfolio);
@@ -23,7 +24,18 @@ function DesktopIconsContainer() {
 	return (
 		<div id="icons-container">
 			<div id="icons-column">
-				<DesktopIcon iconImage={myComputerIcn} iconText="My Computer" />
+				<Tooltip
+					text="How to Use"
+					enterDelay={1000}
+					leaveDelay={0}
+					style={{ position: 'absolute', top: '20px' }}
+				>
+					<DesktopIcon
+						iconImage={myComputerIcn}
+						iconText="My Computer"
+						onClick={showMyComputer}
+					/>
+				</Tooltip>
 				<DesktopIcon iconImage={mailIcon} iconText="Inbox" />
 				<DesktopIcon iconImage={recycleBinIcn} iconText="Recycle Bin" />
 				<Tooltip text="My Socials" enterDelay={1000} leaveDelay={0}>
