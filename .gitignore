@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 # Icons folder and its content
-src/assets/Icons/Win98Icons
-src/assets/Icons/WeatherIcons
+src/assets/Inspiration
