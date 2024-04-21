@@ -9,7 +9,7 @@ export const useStore = create((set) => ({
 		set({ myComputerVisible: false });
 	},
 
-	ieVisible: true,
+	ieVisible: false,
 	showIE: () => {
 		set({ ieVisible: true });
 	},

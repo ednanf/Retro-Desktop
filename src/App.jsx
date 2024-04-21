@@ -2,7 +2,6 @@
 import React from 'react';
 import { styleReset } from 'react95';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { useStore } from './util/Store';
 
 // Components
 import StartMenuBar from './components/StartMenuBar/StartMenuBar';
