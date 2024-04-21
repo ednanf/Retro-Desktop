@@ -1,13 +1,13 @@
-#portfolio-toolbar {
+#explorer-toolbar {
 	display: flex;
 	gap: 5px;
 }
 
-#portfolio-icon-container {
+#explorer-icon-container {
 	display: flex;
 	gap: 8px;
 }
 
-#portfolio-icons-group {
+#explorer-icons-group {
 	display: flex;
 }

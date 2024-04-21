@@ -2,7 +2,7 @@ import React from 'react';
 import { useStore } from '../../util/Store';
 
 import WindowBase from '../WindowBase/WindowBase';
-import PortfolioToolbar from './PortfolioToolbar/PortfolioToolbar';
+import WindowExplorerToolbar from '../WindowExplorerToolbar/WindowExplorerToolbar';
 import PortfolioContent from './PortfolioContent/PortfolioContent';
 
 import openFolderSmIcn from '../../assets/Icons/WindowTitleIcons/open-folder-icon.svg';
@@ -19,7 +19,10 @@ function WindowPortfolio() {
 			width="800"
 			closeWindow={closeWindow}
 		>
-			<PortfolioToolbar />
+			<WindowExplorerToolbar
+				selectIcon={openFolderSmIcn}
+				selectText="Portfolio"
+			/>
 			<PortfolioContent />
 		</WindowBase>
 	);

@@ -2,7 +2,7 @@ import React from 'react';
 import { useStore } from '../../util/Store';
 
 import WindowBase from '../WindowBase/WindowBase';
-import MyComputerToolBar from './MyComputerToolbar/MyComputerToolbar';
+import WindowExplorerToolbar from '../WindowExplorerToolbar/WindowExplorerToolbar';
 import MyComputerContent from './MyComputerContent/MyComputerContent';
 
 import myComputerIcn from '../../assets/Icons/WindowTitleIcons/my-computer-icon.svg';
@@ -21,7 +21,10 @@ function WindowMyComputer() {
 			width="800"
 			closeWindow={closeWindow}
 		>
-			<MyComputerToolBar />
+			<WindowExplorerToolbar
+				selectIcon={myComputerIcn}
+				selectText="My Computer"
+			/>
 			<MyComputerContent />
 		</WindowBase>
 	);
