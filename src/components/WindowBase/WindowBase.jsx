@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 // import Moveable from 'react-moveable';
 import { Window, WindowHeader, Button } from 'react95';
 
-import WindowToolbar from '../WindowToolbar/WindowToolbar';
+import WindowMenuBar from '../WindowMenuBar/WindowMenuBar';
 
 import './WindowBase.css';
 import closeIcn from '../../assets/Icons/UIIcons/close-icon.png';
@@ -48,7 +48,7 @@ function WindowBase({
 					<img src={closeIcn} alt="Close icon" className="close-icon" />
 				</Button>
 			</WindowHeader>
-			<WindowToolbar buttonsArray={toolbarButtonsArr} />
+			<WindowMenuBar buttonsArray={toolbarButtonsArr} />
 			{children}
 			{/* <Moveable
 				target={targetRef}

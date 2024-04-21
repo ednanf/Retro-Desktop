@@ -1,7 +1,7 @@
 import React from 'react';
 import { Toolbar, Button } from 'react95';
 
-function WindowToolbar({ buttonsArray }) {
+function WindowMenuBar({ buttonsArray }) {
 	return (
 		<Toolbar>
 			{buttonsArray.map((button) => (
@@ -13,4 +13,4 @@ function WindowToolbar({ buttonsArray }) {
 	);
 }
 
-export default WindowToolbar;
+export default WindowMenuBar;
