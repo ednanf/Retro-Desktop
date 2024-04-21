@@ -12,3 +12,5 @@
 - PixelArtIcons (https://pixelarticons.com/)
 - Windows98 Icons (All credits to Microsoft) (https://win98icons.alexmeub.com/)
 - Social media Icons by panfieddupa (https://www.deviantart.com/panfrieddupa/gallery/all)
+- Old buttons (https://anlucas.neocities.org/88x31Buttons)
+- Under construction gifs (http://textfiles.com/underconstruction/)

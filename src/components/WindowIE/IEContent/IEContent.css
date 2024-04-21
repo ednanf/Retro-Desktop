@@ -40,16 +40,37 @@
 
 #social-links {
 	display: flex;
-	margin-top: 100px;
+	margin-top: 50px;
 	gap: 70px;
 }
 
 #social-links a:link {
 	font-family: Arial, Helvetica, sans-serif;
 	text-decoration: underline;
-	color: rgb(19, 57, 162);
+	font-size: 20px;
+	color: rgb(154, 162, 250);
 }
 
 #social-links a:visited {
-	color: rgb(61, 22, 126);
+	color: rgb(68, 75, 157);
 }
+
+#ie-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#under-construction {
+	margin-top: 90px;
+}
+
+#ie-buttons-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	gap: 3px;
+}
+
+/* 110 119 220 */
