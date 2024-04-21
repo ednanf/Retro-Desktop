@@ -8,12 +8,36 @@ function IEContent() {
 		<div id="ie-container">
 			<Frame variant="field" id="ie-content">
 				<h2>My Social Networks</h2>
-				<p>You can find me on:</p>
-				<ul>
-					<li>LinkedIn</li>
-					<li>GitHub</li>
-					<li>X</li>
-				</ul>
+				<div id="social-links">
+					<a
+						href="https://www.linkedin.com/in/ednanrff/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						LinkedIn
+					</a>
+					<a
+						href="https://github.com/ednanf"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						GitHub
+					</a>
+					<a
+						href="https://x.com/ednanf"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						X
+					</a>
+					<a
+						href="https://mastodon.net/@myusername"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Mastodon
+					</a>
+				</div>
 			</Frame>
 		</div>
 	);

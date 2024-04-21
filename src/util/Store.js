@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 
 export const useStore = create((set) => ({
-	myComputerVisible: true,
+	myComputerVisible: false,
 	showMyComputer: () => {
 		set({ myComputerVisible: true });
 	},
@@ -9,7 +9,7 @@ export const useStore = create((set) => ({
 		set({ myComputerVisible: false });
 	},
 
-	ieVisible: false,
+	ieVisible: true,
 	showIE: () => {
 		set({ ieVisible: true });
 	},
