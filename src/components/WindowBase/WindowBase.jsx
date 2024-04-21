@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-// import Moveable from 'react-moveable';
+import Moveable from 'react-moveable';
 import { Window, WindowHeader, Button } from 'react95';
 
 import WindowMenuBar from '../WindowMenuBar/WindowMenuBar';
@@ -28,6 +28,7 @@ function WindowBase({
 
 	// Defines the area that is draggable - "dragTarget" prop
 	const dragTargetRef = useRef();
+
 	return (
 		<Window
 			resizable={resizable}
@@ -50,7 +51,7 @@ function WindowBase({
 			</WindowHeader>
 			<WindowMenuBar buttonsArray={toolbarButtonsArr} />
 			{children}
-			{/* <Moveable
+			<Moveable
 				target={targetRef}
 				dragTarget={dragTargetRef}
 				draggable={true}
@@ -62,7 +63,7 @@ function WindowBase({
 				onDrag={(e) => {
 					e.target.style.transform = e.transform;
 				}}
-			/> */}
+			/>
 		</Window>
 	);
 }
