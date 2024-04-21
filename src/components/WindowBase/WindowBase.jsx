@@ -36,14 +36,16 @@ function WindowBase({
 			style={{ width: `${width}px`, height: `${height}px` }}
 			ref={targetRef}
 		>
-			<WindowHeader className="window-header" ref={dragTargetRef}>
-				<div className="window-title">
-					<img
-						src={headerIcn}
-						alt="Window header icon"
-						className="header-icon"
-					/>
-					<span>{windowTitle}</span>
+			<WindowHeader className="window-header">
+				<div className="draggable-area" ref={dragTargetRef}>
+					<div className="window-title">
+						<img
+							src={headerIcn}
+							alt="Window header icon"
+							className="header-icon"
+						/>
+						<span>{windowTitle}</span>
+					</div>
 				</div>
 				<Button onClick={closeWindow}>
 					<img src={closeIcn} alt="Close icon" className="close-icon" />

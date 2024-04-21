@@ -5,6 +5,11 @@
 	align-items: center;
 }
 
+/* Ensures the window is draggable without covering the close button */
+.draggable-area {
+	width: 744px;
+}
+
 .header-icon {
 	position: relative;
 	top: 4px;
