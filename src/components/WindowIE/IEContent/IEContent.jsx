@@ -2,15 +2,16 @@ import React from 'react';
 import { Frame } from 'react95';
 
 import './IEContent.css';
-import linkedIn from '../../../assets/Content/MyComputer/linkedin-logo.png';
-import githubIcn from '../../../assets/Content/MyComputer/github-logo.png';
-import twitterIcn from '../../../assets/Content/MyComputer/twitter-logo.png';
+import socialMedia from '../../../assets/Content/IEContent/social-network.gif';
+import linkedIn from '../../../assets/Content/IEContent/linkedin-logo.png';
+import githubIcn from '../../../assets/Content/IEContent/github-logo.png';
+import twitterIcn from '../../../assets/Content/IEContent/twitter-logo.png';
 
 function IEContent() {
 	return (
 		<div id="ie-container">
 			<Frame variant="field" id="ie-content">
-				<h2>My Social Networks</h2>
+				<img src={socialMedia} alt="" />
 				<div className="divider"></div>
 				<div id="social-links">
 					<div className="link-container">

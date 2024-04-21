@@ -10,6 +10,7 @@
 	width: 787px;
 	padding: 1rem;
 	align-items: center;
+	background-image: url(/src/assets/Content/IEContent/background-img.png);
 }
 
 #ie-content h2 {
