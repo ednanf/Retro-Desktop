@@ -7,10 +7,7 @@ import { useStore } from './util/Store';
 // Components
 import StartMenuBar from './components/StartMenuBar/StartMenuBar';
 import DesktopIconsContainer from './components/DesktopIcons/DesktopIconsContainer';
-import WindowMyComputer from './components/WindowMyComputer/WindowMyComputer';
-import WindowIE from './components/WindowIE/WindowIE';
-import WindowResume from './components/WindowResume/WindowResume';
-import WindowPortfolio from './components/WindowPortfolio/WindowPortfolio';
+import WindowManager from './components/WindowManager';
 
 // Theme
 import original from 'react95/dist/themes/original';
@@ -43,11 +40,6 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 function App() {
-	const myComputerVisible = useStore((state) => state.myComputerVisible);
-	const ieVisible = useStore((state) => state.ieVisible);
-	const resumeVisible = useStore((state) => state.resumeVisible);
-	const portfolioVisible = useStore((state) => state.portfolioVisible);
-
 	return (
 		<>
 			<GlobalStyles />
@@ -67,10 +59,7 @@ function App() {
 								transform: 'translate(-50%, -50%)',
 							}}
 						>
-							{myComputerVisible && <WindowMyComputer />}
-							{ieVisible && <WindowIE />}
-							{resumeVisible && <WindowResume />}
-							{portfolioVisible && <WindowPortfolio />}
+							<WindowManager />
 						</div>
 					</main>
 				</div>
