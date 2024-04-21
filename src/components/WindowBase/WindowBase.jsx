@@ -10,8 +10,7 @@ import closeIcn from '../../assets/Icons/UIIcons/close-icon.png';
 // TODO: make toolbar be optional
 // To make it optional, make a boolean prop to render it only if true
 
-// FIXME: make the close button not be affected by the dragging target of moveable
-// right now, it's disables so I can close the window
+// FIXME: Find a way to not make the screen scrollable if the window go out of bounds
 
 function WindowBase({
 	windowTitle,
@@ -33,7 +32,14 @@ function WindowBase({
 		<Window
 			resizable={resizable}
 			shadow={true}
-			style={{ width: `${width}px`, height: `${height}px` }}
+			style={{
+				width: `${width}px`,
+				height: `${height}px`,
+				position: 'absolute',
+				top: '50%',
+				left: '50%',
+				transform: 'translate(-50%, -50%)',
+			}}
 			ref={targetRef}
 		>
 			<WindowHeader className="window-header">

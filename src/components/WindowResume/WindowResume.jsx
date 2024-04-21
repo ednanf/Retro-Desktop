@@ -7,6 +7,8 @@ import ResumeTextField from './ResumeTextField';
 
 import headerIcn from '../../assets/Icons/WindowTitleIcons/document-title-icon.svg';
 
+// FIXME: fix the close button - it's showing as a rectangle right now!
+
 function WindowResume() {
 	const hideResume = useStore((state) => state.hideResume);
 
