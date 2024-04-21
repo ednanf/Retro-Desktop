@@ -11,6 +11,7 @@
 	padding: 1rem;
 	align-items: center;
 	background-image: url(/src/assets/Content/IEContent/background-img.png);
+	background-repeat: repeat;
 }
 
 #ie-content h2 {
@@ -72,5 +73,3 @@
 	margin-top: 10px;
 	gap: 3px;
 }
-
-/* 110 119 220 */
