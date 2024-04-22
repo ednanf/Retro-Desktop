@@ -54,7 +54,7 @@ function WindowBase({
 		>
 			<WindowHeader className="window-header">
 				<div className="draggable-area" ref={dragTargetRef}>
-					<div className="window-title">
+					<div className="window-title non-selectable-text">
 						<img
 							src={headerIcn}
 							alt="Window header icon"

@@ -25,3 +25,10 @@
 	height: 15px;
 	width: 13px;
 }
+
+.non-selectable-text {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
