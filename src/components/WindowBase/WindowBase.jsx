@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import Moveable from 'react-moveable';
 import { Window, WindowHeader, Button } from 'react95';
 
@@ -28,6 +28,14 @@ function WindowBase({
 	// Defines the area that is draggable - "dragTarget" prop
 	const dragTargetRef = useRef();
 
+	// FIXME: the value always increment, making necessary multiple clicks on the windows behind
+	// Window active management
+	const [zIndex, setZIndex] = useState(0);
+
+	function handleClick() {
+		setZIndex((prevZindex) => prevZindex + 1);
+	}
+
 	return (
 		<Window
 			resizable={resizable}
@@ -39,8 +47,10 @@ function WindowBase({
 				top: '50%',
 				left: '50%',
 				transform: 'translate(-50%, -50%)',
+				zIndex: zIndex,
 			}}
 			ref={targetRef}
+			onClick={handleClick}
 		>
 			<WindowHeader className="window-header">
 				<div className="draggable-area" ref={dragTargetRef}>
