@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { useStore } from '../../util/Store';
 import Moveable from 'react-moveable';
 import { Window, WindowHeader, Button } from 'react95';
 
@@ -28,13 +29,18 @@ function WindowBase({
 	// Defines the area that is draggable - "dragTarget" prop
 	const dragTargetRef = useRef();
 
-	// FIXME: the value always increment, making necessary multiple clicks on the windows behind
 	// Window active management
+	const store = useStore();
+	const { globalZIndex, increaseGlobalZIndex } = store;
+
 	const [zIndex, setZIndex] = useState(0);
 
 	function handleClick() {
-		setZIndex((prevZindex) => prevZindex + 1);
+		setZIndex(globalZIndex + 1);
+		increaseGlobalZIndex();
 	}
+
+	console.log(globalZIndex, zIndex);
 
 	return (
 		<Window

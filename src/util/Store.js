@@ -1,6 +1,12 @@
 import { create } from 'zustand';
 
 export const useStore = create((set) => ({
+	// Window Management
+	globalZIndex: 0,
+	increaseGlobalZIndex: () =>
+		set((state) => ({ globalZIndex: state.globalZIndex + 1 })),
+
+	// Windows
 	myComputerVisible: false,
 	showMyComputer: () => {
 		set({ myComputerVisible: true });
