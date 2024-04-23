@@ -18,11 +18,13 @@ function StartButton() {
 				enterDelay={400}
 				leaveDelay={0}
 				onOpen={close}
+				className="non-selectable-text"
 			>
 				<Button
 					onClick={() => setOpen(!open)}
 					active={open}
 					style={{ fontWeight: 'bold' }}
+					className="non-selectable-text"
 				>
 					<img src={startMenuIcn} alt="Start menu icon" />
 					Start
@@ -35,6 +37,7 @@ function StartButton() {
 						left: '4px',
 						bottom: '93%',
 					}}
+					className="non-selectable-text"
 				>
 					<MenuListItem>Item 1</MenuListItem>
 					<MenuListItem>Item 2</MenuListItem>

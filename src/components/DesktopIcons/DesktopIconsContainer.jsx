@@ -28,6 +28,7 @@ function DesktopIconsContainer() {
 					enterDelay={1000}
 					leaveDelay={0}
 					style={{ position: 'absolute', top: '20px' }}
+					className="non-selectable-text"
 				>
 					<DesktopIcon
 						iconImage={myComputerIcn}
@@ -37,21 +38,36 @@ function DesktopIconsContainer() {
 				</Tooltip>
 				<DesktopIcon iconImage={mailIcon} iconText="Inbox" />
 				<DesktopIcon iconImage={recycleBinIcn} iconText="Recycle Bin" />
-				<Tooltip text="My Socials" enterDelay={1000} leaveDelay={0}>
+				<Tooltip
+					text="My Socials"
+					enterDelay={1000}
+					leaveDelay={0}
+					className="non-selectable-text"
+				>
 					<DesktopIcon
 						iconImage={ieIcn}
 						iconText="Internet Explorer"
 						onClick={showIE}
 					/>
 				</Tooltip>
-				<Tooltip text="My Resume" enterDelay={1000} leaveDelay={0}>
+				<Tooltip
+					text="My Resume"
+					enterDelay={1000}
+					leaveDelay={0}
+					className="non-selectable-text"
+				>
 					<DesktopIcon
 						iconImage={documentIcn}
 						iconText="Resume"
 						onClick={showResume}
 					/>
 				</Tooltip>
-				<Tooltip text="My Portfolio" enterDelay={1000} leaveDelay={0}>
+				<Tooltip
+					text="My Portfolio"
+					enterDelay={1000}
+					leaveDelay={0}
+					className="non-selectable-text"
+				>
 					<DesktopIcon
 						iconImage={folderIcn}
 						iconText="Portfolio"
