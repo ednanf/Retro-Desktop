@@ -9,6 +9,8 @@ import TrayIcon from './TrayIcon';
 
 // UI
 import './StartMenuBar.css';
+
+// TODO: change the speakers icon to svg
 import speakersIcn from '../../assets/Icons/TrayIcons/speakers-tray-icon.png';
 
 // TODO: Move CSS rules to a separate file

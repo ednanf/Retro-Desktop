@@ -22,12 +22,13 @@
 
 #desktop-icon-text {
 	box-sizing: border-box;
-	width: 100px;
+	width: 90px;
 	text-align: center;
 	align-items: center;
 	font-size: 13px;
 	margin-top: 8px;
 	padding: 1px 2px;
+	text-wrap: wrap;
 }
 
 /* TODO: remove this class when another button is pressed or window is closed */

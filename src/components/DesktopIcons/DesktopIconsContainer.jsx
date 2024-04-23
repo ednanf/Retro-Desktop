@@ -4,6 +4,7 @@ import { useStore } from '../../util/Store';
 
 import DesktopIcon from './DesktopIcon/DesktopIcon';
 
+// FIXME: change icons to SVG to improve blurrines
 import './DesktopIconsContainer.css';
 import myComputerIcn from '../../assets/Icons/DesktopIcons/my-computer-icon.png';
 import ieIcn from '../../assets/Icons/DesktopIcons/ie-icon.png';
@@ -12,8 +13,6 @@ import recycleBinIcn from '../../assets/Icons/DesktopIcons/recycle-bin-icon.png'
 import documentIcn from '../../assets/Icons/DesktopIcons/document-icon.png';
 import folderIcn from '../../assets/Icons/DesktopIcons/folder-icon.png';
 import weatherIcn from '../../assets/Icons/DesktopIcons/sunrise-icon.png';
-
-//TODO : fix IE icon text to be a column - it's too wide right now
 
 function DesktopIconsContainer() {
 	const showMyComputer = useStore((state) => state.showMyComputer);
