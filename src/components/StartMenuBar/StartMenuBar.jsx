@@ -10,9 +10,6 @@ import TrayIcon from './TrayIcon';
 // UI
 import './StartMenuBar.css';
 
-// FIXME: sometimes the whole page closes because the mouse hovers over the start button
-// maybe remove the tooltip
-
 import speakersIcn from '../../assets/Icons/TrayIcons/speakers-tray-icon.svg';
 
 function StartMenuBar() {
