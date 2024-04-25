@@ -10,10 +10,11 @@ import TrayIcon from './TrayIcon';
 // UI
 import './StartMenuBar.css';
 
-// TODO: change the speakers icon to svg
-import speakersIcn from '../../assets/Icons/TrayIcons/speakers-tray-icon.png';
+// FIXME: sometimes the whole page closes because the mouse hovers over the start button
+// maybe remove the tooltip
 
-// TODO: Move CSS rules to a separate file
+import speakersIcn from '../../assets/Icons/TrayIcons/speakers-tray-icon.svg';
+
 function StartMenuBar() {
 	return (
 		<>
@@ -22,16 +23,11 @@ function StartMenuBar() {
 					<StartButton />
 					<Frame
 						variant="well"
-						style={{ padding: '0.1rem 0.4rem 0rem 0.4rem' }}
+						style={{
+							padding: '0.1rem 0.4rem 0rem 0.4rem',
+						}}
 					>
-						<div
-							style={{
-								justifyContents: 'space-between',
-								display: 'flex',
-								gap: '0.5rem',
-								alignItems: 'center',
-							}}
-						>
+						<div className="tray-items">
 							<TrayIcon
 								imgName={speakersIcn}
 								imgAlt="Speakers"

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, MenuList, MenuListItem, Separator, Tooltip } from 'react95';
 
-import startMenuIcn from '../../assets/Icons/StartMenuIcons/start-menu-icon.png';
+import startMenuIcn from '../../assets/Icons/StartMenuIcons/start-menu-icon.svg';
 
 function StartButton() {
 	const [open, setOpen] = useState(false);

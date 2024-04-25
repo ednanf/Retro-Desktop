@@ -9,7 +9,12 @@ function TrayIcon({ imgName, imgAlt, tooltipText }) {
 			leaveDelay={0}
 			className="non-selectable-text"
 		>
-			<img src={imgName} alt={imgAlt} className="non-selectable-text" />
+			<img
+				src={imgName}
+				alt={imgAlt}
+				className="non-selectable-text"
+				style={{ marginRight: '8px' }}
+			/>
 		</Tooltip>
 	);
 }
