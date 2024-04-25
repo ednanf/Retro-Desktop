@@ -8,7 +8,6 @@ import WindowMenuBar from '../WindowMenuBar/WindowMenuBar';
 import './WindowBase.css';
 import closeIcn from '../../assets/Icons/UIIcons/close-icon.png';
 
-// TODO: make toolbar be optional
 // To make it optional, make a boolean prop to render it only if true
 
 // FIXME: Find a way to not make the screen scrollable if the window go out of bounds
@@ -56,9 +55,13 @@ function WindowBase({
 				zIndex: zIndex,
 			}}
 			ref={targetRef}
-			onClick={handleClick}
+			onMouseDown={handleClick}
 		>
-			<WindowHeader className="window-header">
+			<WindowHeader
+				// FIXME: make the window active when closing the frontmost one
+				active={globalZIndex !== zIndex ? false : true}
+				className="window-header"
+			>
 				<div className="draggable-area" ref={dragTargetRef}>
 					<div className="window-title non-selectable-text">
 						<img
@@ -69,8 +72,14 @@ function WindowBase({
 						<span>{windowTitle}</span>
 					</div>
 				</div>
-				<Button onClick={closeWindow}>
-					<img src={closeIcn} alt="Close icon" className="close-icon" />
+				<Button onMouseDown={closeWindow}>
+					<img
+						src={closeIcn}
+						alt="Close icon"
+						className="close-icon"
+						// this is the place that loads less items with onLoad, necessary for making the window the frontmost always
+						onLoad={handleClick}
+					/>
 				</Button>
 			</WindowHeader>
 			<WindowMenuBar buttonsArray={toolbarButtonsArr} />

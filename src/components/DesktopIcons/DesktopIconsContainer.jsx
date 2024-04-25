@@ -4,14 +4,14 @@ import { useStore } from '../../util/Store';
 
 import DesktopIcon from './DesktopIcon/DesktopIcon';
 
-// FIXME: change icons to SVG to improve blurrines
+// FIXME: find IE icon in svg
 import './DesktopIconsContainer.css';
-import myComputerIcn from '../../assets/Icons/DesktopIcons/my-computer-icon.png';
+import myComputerIcn from '../../assets/Icons/DesktopIcons/my-computer-icon.svg';
 import ieIcn from '../../assets/Icons/DesktopIcons/ie-icon.png';
-import mailIcon from '../../assets/Icons/DesktopIcons/mail-icon.png';
-import recycleBinIcn from '../../assets/Icons/DesktopIcons/recycle-bin-icon.png';
-import documentIcn from '../../assets/Icons/DesktopIcons/document-icon.png';
-import folderIcn from '../../assets/Icons/DesktopIcons/folder-icon.png';
+import mailIcon from '../../assets/Icons/DesktopIcons/mail-icon.svg';
+import recycleBinIcn from '../../assets/Icons/DesktopIcons/recycle-bin-icon.svg';
+import documentIcn from '../../assets/Icons/DesktopIcons/document-icon.svg';
+import folderIcn from '../../assets/Icons/DesktopIcons/folder-icon.svg';
 import weatherIcn from '../../assets/Icons/DesktopIcons/sunrise-icon.png';
 
 function DesktopIconsContainer() {
@@ -28,6 +28,7 @@ function DesktopIconsContainer() {
 					enterDelay={1000}
 					leaveDelay={0}
 					style={{ position: 'absolute', top: '20px' }}
+					className="non-selectable-text"
 				>
 					<DesktopIcon
 						iconImage={myComputerIcn}
@@ -37,21 +38,36 @@ function DesktopIconsContainer() {
 				</Tooltip>
 				<DesktopIcon iconImage={mailIcon} iconText="Inbox" />
 				<DesktopIcon iconImage={recycleBinIcn} iconText="Recycle Bin" />
-				<Tooltip text="My Socials" enterDelay={1000} leaveDelay={0}>
+				<Tooltip
+					text="My Socials"
+					enterDelay={1000}
+					leaveDelay={0}
+					className="non-selectable-text"
+				>
 					<DesktopIcon
 						iconImage={ieIcn}
 						iconText="Internet Explorer"
 						onClick={showIE}
 					/>
 				</Tooltip>
-				<Tooltip text="My Resume" enterDelay={1000} leaveDelay={0}>
+				<Tooltip
+					text="My Resume"
+					enterDelay={1000}
+					leaveDelay={0}
+					className="non-selectable-text"
+				>
 					<DesktopIcon
 						iconImage={documentIcn}
 						iconText="Resume"
 						onClick={showResume}
 					/>
 				</Tooltip>
-				<Tooltip text="My Portfolio" enterDelay={1000} leaveDelay={0}>
+				<Tooltip
+					text="My Portfolio"
+					enterDelay={1000}
+					leaveDelay={0}
+					className="non-selectable-text"
+				>
 					<DesktopIcon
 						iconImage={folderIcn}
 						iconText="Portfolio"

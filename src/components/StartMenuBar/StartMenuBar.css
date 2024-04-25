@@ -1,0 +1,6 @@
+.tray-items {
+	justify-content: 'space-between';
+	display: 'flex';
+	gap: 10rem;
+	align-items: center;
+}

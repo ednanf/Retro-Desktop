@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import { Button, MenuList, MenuListItem, Separator, Tooltip } from 'react95';
 
-import startMenuIcn from '../../assets/Icons/StartMenuIcons/start-menu-icon.png';
+import startMenuIcn from '../../assets/Icons/StartMenuIcons/start-menu-icon.svg';
 
 function StartButton() {
 	const [open, setOpen] = useState(false);
 
-	// TODO: hide tooltip when clicking on start button
-	// TODO: hide start menu when clicking on desktop
-	// TODO: Move CSS rules to a separate file
+	// Close the menu when clicking outside of it
+	document.addEventListener('click', (e) => {
+		if (!e.target.closest('.non-selectable-text')) {
+			setOpen(false);
+		}
+	});
 
 	return (
 		<div id="start-button">
@@ -17,12 +20,13 @@ function StartButton() {
 				style={{ left: '80px' }}
 				enterDelay={400}
 				leaveDelay={0}
-				onOpen={close}
+				className="non-selectable-text"
 			>
 				<Button
 					onClick={() => setOpen(!open)}
 					active={open}
 					style={{ fontWeight: 'bold' }}
+					className="non-selectable-text"
 				>
 					<img src={startMenuIcn} alt="Start menu icon" />
 					Start
@@ -35,6 +39,7 @@ function StartButton() {
 						left: '4px',
 						bottom: '93%',
 					}}
+					className="non-selectable-text"
 				>
 					<MenuListItem>Item 1</MenuListItem>
 					<MenuListItem>Item 2</MenuListItem>

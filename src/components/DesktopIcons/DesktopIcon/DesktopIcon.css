@@ -30,9 +30,3 @@
 	padding: 1px 2px;
 	text-wrap: wrap;
 }
-
-/* TODO: remove this class when another button is pressed or window is closed */
-.active {
-	box-sizing: border-box;
-	background-color: rgb(0, 24, 165);
-}

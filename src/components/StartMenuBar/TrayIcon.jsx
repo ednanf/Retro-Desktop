@@ -3,8 +3,18 @@ import { Tooltip } from 'react95';
 
 function TrayIcon({ imgName, imgAlt, tooltipText }) {
 	return (
-		<Tooltip text={tooltipText} enterDelay={400} leaveDelay={0}>
-			<img src={imgName} alt={imgAlt} />
+		<Tooltip
+			text={tooltipText}
+			enterDelay={400}
+			leaveDelay={0}
+			className="non-selectable-text"
+		>
+			<img
+				src={imgName}
+				alt={imgAlt}
+				className="non-selectable-text"
+				style={{ marginRight: '8px' }}
+			/>
 		</Tooltip>
 	);
 }

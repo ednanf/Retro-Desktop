@@ -30,8 +30,9 @@ function TrayClock() {
 			enterDelay={400}
 			leaveDelay={0}
 			style={{ left: '25px' }}
+			className="non-selectable-text"
 		>
-			<p>{currentTime}</p>
+			<p className="non-selectable-text">{currentTime}</p>
 		</Tooltip>
 	);
 }

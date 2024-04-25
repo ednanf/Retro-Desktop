@@ -7,7 +7,7 @@
 
 /* Ensures the window is draggable without covering the close button */
 .draggable-area {
-	width: 744px;
+	width: 94%;
 }
 
 .header-icon {
@@ -24,6 +24,11 @@
 	bottom: 1px;
 	height: 15px;
 	width: 13px;
+}
+
+.window-header Button {
+	height: 100px;
+	width: 100px;
 }
 
 .non-selectable-text {
