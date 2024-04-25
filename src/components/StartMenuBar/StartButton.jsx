@@ -6,7 +6,12 @@ import startMenuIcn from '../../assets/Icons/StartMenuIcons/start-menu-icon.png'
 function StartButton() {
 	const [open, setOpen] = useState(false);
 
-	// TODO: hide start menu when clicking on desktop
+	// Close the menu when clicking outside of it
+	document.addEventListener('click', (e) => {
+		if (!e.target.closest('.non-selectable-text')) {
+			setOpen(false);
+		}
+	});
 
 	return (
 		<div id="start-button">
