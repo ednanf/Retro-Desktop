@@ -20,7 +20,6 @@ function StartButton() {
 				style={{ left: '80px' }}
 				enterDelay={400}
 				leaveDelay={0}
-				onOpen={close}
 				className="non-selectable-text"
 			>
 				<Button
