@@ -58,8 +58,7 @@ function WindowBase({
       onMouseDown={handleClick}
     >
       <WindowHeader
-        // FIXME: the first time 2 windows appear, both of them are marked as active
-        // FIXME: it's possible that every window spawns inactive after a few clicks
+        // FIXME: make the window active when closing the frontmost one
         active={globalZIndex !== zIndex ? false : true}
         className="window-header"
       >
@@ -74,7 +73,13 @@ function WindowBase({
           </div>
         </div>
         <Button onClick={closeWindow}>
-          <img src={closeIcn} alt="Close icon" className="close-icon" />
+          <img
+            src={closeIcn}
+            alt="Close icon"
+            className="close-icon"
+            // this is the place that loads less items with onLoad, necessary for making the window the frontmost always
+            onLoad={handleClick}
+          />
         </Button>
       </WindowHeader>
       <WindowMenuBar buttonsArray={toolbarButtonsArr} />

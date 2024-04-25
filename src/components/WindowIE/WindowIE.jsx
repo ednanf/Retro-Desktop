@@ -11,22 +11,22 @@ import titleIcn from '../../assets/Icons/WindowTitleIcons/ie-window-icn.png';
 // TODO: try to find and add Windows logo to the right of address/toolbar - look for references
 
 function WindowIE() {
-	const closeWindow = useStore((state) => state.hideIE);
+  const closeWindow = useStore(state => state.hideIE);
 
-	return (
-		<WindowBase
-			windowTitle="Microsoft Internet Explorer - My Social Networks"
-			headerIcn={titleIcn}
-			toolbarButtonsArr={['File', 'Edit', 'View', 'Favorites', 'Help']}
-			height="600"
-			width="800"
-			closeWindow={closeWindow}
-		>
-			<IEToolbar />
-			<URLBar />
-			<IEContent />
-		</WindowBase>
-	);
+  return (
+    <WindowBase
+      windowTitle="Microsoft Internet Explorer - My Social Networks"
+      headerIcn={titleIcn}
+      toolbarButtonsArr={['File', 'Edit', 'View', 'Favorites', 'Help']}
+      height="600"
+      width="800"
+      closeWindow={closeWindow}
+    >
+      <IEToolbar />
+      <URLBar />
+      <IEContent />
+    </WindowBase>
+  );
 }
 
 export default WindowIE;
