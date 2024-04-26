@@ -49,6 +49,7 @@ function App() {
 						<div id="start-bar">
 							<StartMenuBar />
 						</div>
+					{/* TODO: move to a css file*/}
 						<div
 							id="window"
 							style={{
