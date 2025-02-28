@@ -38,6 +38,8 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
+// TODO: Try to use box-sizing: border-box to limit the window and avoid getting out of the current height/width
+
 function App() {
 	return (
 		<>
